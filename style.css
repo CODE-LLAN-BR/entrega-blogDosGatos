@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+:root{
+    font-size: 62.5%;
+
+}
+body{
+    font-size: 1.6rem;
+
+}
+
+
+
+header{
+
+    background: #065E7C;
+
+}
+
+
+.h-img{
+    width: 4.2rem;
+    height: 4.2rem;
+    background: blue;
+    border-radius: 50%;
+
+}
+
+#logo{
+    background:none;
+    width: 4rem;
+    height: 4rem;
+
+}
