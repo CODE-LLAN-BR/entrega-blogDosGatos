@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Blog dos gatos</title>
   </head>
   <body>
@@ -24,18 +32,26 @@
         />
       </header>
       <main>
-        <section>
+        <section class="section-main">
           <img
             src="./assets/gato-main.jpg"
             alt="foto de um gato encima de uma pedra vendo o por do sol"
+            id="main-img"
           />
-          <h2>Seriam os gatos astronautas?</h2>
-          <div class="button-container">
-            <div class="button-wrapper">
-              <input type="button" id="like" />
-            </div>
-            <div class="button-wrapper">
-              <input type="button" id="loathe" />
+
+          <div class="title">
+            <h2>Seriam os gatos astronautas?</h2>
+
+            <div class="button-container">
+              <div class="button-wrapper" id="like">
+                <img src="./assets/like.svg" alt="like" />
+                <input type="button" />
+              </div>
+
+              <div class="button-wrapper" id="loathe">
+                <img src="./assets/loathe.svg" alt="loathe" />
+                <input type="button" />
+              </div>
             </div>
           </div>
           <article>
@@ -45,13 +61,15 @@
               conhecidos por sua agilidade, elegância e um comportamento muitas
               vezes imprevisível. Contudo, recentemente, uma teoria tem ganhado
               espaço na internet e entre teóricos de conspiração: seriam os
-              gatos astronautas? A teoria sugere que os gatos não são animais
-              terrestres, mas sim seres extraterrestres enviados para realizar
-              uma missão específica em nosso planeta. Há relatos históricos que
-              apontam para o fato de que os gatos eram considerados seres
-              sagrados em diferentes culturas e até mesmo associados a figuras
-              divinas. Isso poderia indicar que os gatos têm uma origem muito
-              mais mística do que se pensava anteriormente.
+              gatos astronautas?
+              <br />
+              A teoria sugere que os gatos não são animais terrestres, mas sim
+              seres extraterrestres enviados para realizar uma missão específica
+              em nosso planeta. Há relatos históricos que apontam para o fato de
+              que os gatos eram considerados seres sagrados em diferentes
+              culturas e até mesmo associados a figuras divinas. Isso poderia
+              indicar que os gatos têm uma origem muito mais mística do que se
+              pensava anteriormente.
             </p>
             <br />
             <p>
@@ -66,34 +84,71 @@
             </p>
           </article>
         </section>
-        <section class="sidebar">
-            <h2>Artigos relacionados</h2>
-            <article>
-                <img src="./assets/cat-01.jpg" alt="gato preto e branco">
-                <h3>Sábado preguiçoso</h3>
-                <p>Descubra atividades interessantes para fazer com seu pet durante os finais de semana.</p>
-            </article>
-            <article>
-                <img src="./assets/cat-02.jpg" alt="uma sexta cheia de filhotes de gato">
-                <h3>Balaio de gatos</h3>
-                <p>Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes.</p>
-            </article>
-            <article>
-                <img src="./assets/cat-03.jpg" alt="gato preto e branco em frente a uma parede com paletas de cores">
-                <h3>Cartela de cores</h3>
-                <p>Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano.</p>
-            </article>
-            <article>
-                <img src="./assets/cat-04.jpg" alt="gato cinza embaixo de uma coberta">
-                <h3>Os gatos sentem frio?</h3>
-                <p>Preparem-se para a frente fria que vem para o país da melhor maneira possível.</p>
-            </article>
-            <article>
-                <img src="./assets/cat-05.jpg" alt="filhote de gato encima da cama">
-                <h3>Conheça o Moacir</h3>
-                <p>Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação.</p>
-            </article>
 
+        <section class="sidebar">
+          <h2>Artigos relacionados</h2>
+          <article>
+            <img src="./assets/cat-01.jpg" alt="gato preto e branco" />
+            <div class=".text">
+              <h3>Sábado preguiçoso</h3>
+              <p>
+                Descubra atividades interessantes para fazer com seu pet durante
+                os finais de semana.
+              </p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/cat-02.jpg"
+              alt="uma sexta cheia de filhotes de gato"
+            />
+            <div class=".text">
+              <h3>Balaio de gatos</h3>
+              <p>
+                Como evitar confusões entre seus gatíneos e acostumá-los desde
+                filhotes.
+              </p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/cat-03.jpg"
+              alt="gato preto e branco em frente a uma parede com paletas de cores"
+            />
+            <div class=".text">
+              <h3>Cartela de cores</h3>
+              <p>
+                Seu gato é inverno intenso? Verão profundo? Descubra as cores
+                que mais combinam com seu bichano.
+              </p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/cat-04.jpg"
+              alt="gato cinza embaixo de uma coberta"
+            />
+            <div class=".text">
+              <h3>Os gatos sentem frio?</h3>
+              <p>
+                Preparem-se para a frente fria que vem para o país da melhor
+                maneira possível.
+              </p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/cat-05.jpg"
+              alt="filhote de gato encima da cama"
+            />
+            <div class=".text">
+              <h3>Conheça o Moacir</h3>
+              <p>
+                Moacir é o gatinho da semana do nosso blog. Venha conhecer sua
+                história de superação.
+              </p>
+            </div>
+          </article>
         </section>
       </main>
       <footer>
