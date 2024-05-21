@@ -32,6 +32,7 @@ body{
 
 .page{
     display: grid;
+    
 }
 
 
@@ -47,6 +48,8 @@ header{
     align-items: center;
 
 }
+
+
 #logo{
     width: 4rem;
     height: 4rem;
@@ -102,16 +105,17 @@ header{
 
 main #main-img{
     
-    width: 100%;
+    width: 100%;;
     border-radius: 5px;
-    margin-bottom: 3.2rem;
+
 
     
-
     
+
 }
-main{
-    padding: 2.4rem;
+.section-main{
+    padding: 3.2rem 2.4rem 2.4rem;
+
 }
 .title{
     margin-bottom: 3.2rem;
@@ -254,19 +258,22 @@ footer p {
     }
 
     
-  
+
     main{
         padding: 4rem 11.2rem;
         display: grid;
         grid-template-areas: 
-        'A A B'
-        'A A C';
+        'A A C'
+        'B B C';
 ;
 
         column-gap: 3.4rem;
     }
-    .section-main{
+    #main-img{
         grid-area: A;
+    }
+    .section-main{
+        grid-area: B;
     }
     .section-main .title{
         display: grid;
@@ -276,7 +283,7 @@ footer p {
     }
     
     .sidebar{
-        grid-area: B;
+        grid-area: C;
         row-gap: 3.2rem;
         column-gap: 1.6rem;
     }
